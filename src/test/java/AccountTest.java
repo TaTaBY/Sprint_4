@@ -29,8 +29,8 @@ public class AccountTest {
         };
     }
 
-    @DisplayName("Check user name {chekedName} on rules")
-    @Description("This test is for check current user's name - {chekedName} on rules.")
+    @DisplayName("Check user name ${chekedName} on rules")
+    @Description("This test is for check current user's name - ${chekedName} on rules.")
     @Test
     public void testCheckNameToEmbossWithTestData() {
         Account account = new Account(chekedName);
