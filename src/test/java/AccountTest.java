@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -27,6 +29,8 @@ public class AccountTest {
         };
     }
 
+    @DisplayName("Check user name {chekedName} on rules")
+    @Description("This test is for check current user's name - {chekedName} on rules.")
     @Test
     public void testCheckNameToEmbossWithTestData() {
         Account account = new Account(chekedName);

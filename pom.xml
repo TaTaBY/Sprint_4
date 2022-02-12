@@ -35,6 +35,18 @@
             <artifactId>byte-buddy</artifactId>
             <version>${byte-buddy.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.15.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit4</artifactId>
+            <version>2.15.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
