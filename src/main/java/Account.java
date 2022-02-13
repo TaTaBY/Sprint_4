@@ -11,10 +11,7 @@ public class Account {
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
              Если строка удовлетворяет условиям, метод возвращает true, иначе — false.
          */
-        if (name.length() >= 3 && name.length() <= 19 && name.contains(" ") && !name.startsWith(" ") && !name.endsWith(" ")) {
-            return true;
-        }
-        return  false;
+        return name.length() >= 3 && name.length() <= 19 && name.contains(" ") && !name.startsWith(" ") && !name.endsWith(" ") && name.indexOf(" ") == name.lastIndexOf(" ");
     }
 
 }
