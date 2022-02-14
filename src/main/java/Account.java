@@ -12,7 +12,7 @@ public class Account {
              Если строка удовлетворяет условиям, метод возвращает true, иначе — false.
          */
         try {
-            return name.matches("[a-zA-ZА-Яа-я]{1,9} [a-zA-ZА-Яа-я]{1,9}");
+            return name.matches("^(?=.{3,19}$)([\\S]+\\s[\\S]+)$");
             //old version
             //name.length() >= 3 && name.length() <= 19 && name.contains(" ") && !name.startsWith(" ")
             //&& !name.endsWith(" ") && name.indexOf(" ") == name.lastIndexOf(" ");
