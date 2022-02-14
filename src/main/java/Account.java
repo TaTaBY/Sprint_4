@@ -18,7 +18,7 @@ public class Account {
             return false;
         }
 
-        String regex = "^(?=.{3,19}$)([a-zA-ZА-Яа-я]+\\s[a-zA-ZА-Яа-я+-]+)$";
+        String regex = "^(?=.{3,19}$)([a-zA-ZА-Яа-я]+ [a-zA-ZА-Яа-я+-]+)$";
         Pattern pattern = Pattern.compile(regex);
 
         Matcher matcher = pattern.matcher(name);
