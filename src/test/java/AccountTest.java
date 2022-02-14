@@ -21,6 +21,8 @@ public class AccountTest {
     public static Object[][] getTestData() {
         return new Object[][] {
                 {"Тимоте Шаламе", true},
+                {"Тим оте-аламе", true},
+                {"Тим1 оте-аламе", false},
                 {"ТимотеШаламе", false},
                 {"Ти", false},
                 {"Тимоте Шаламетесттес", false},
